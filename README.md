@@ -2,7 +2,7 @@
 Use OpenCV-Python and Flask to create a web streaming video recorder for camera.
 
 ## Environment
-* Python 2.7 or 3.5
+* Python  >=3.6 
 * OpenCV 3.3.0
 
 ## How to Run 
@@ -17,18 +17,13 @@ Use OpenCV-Python and Flask to create a web streaming video recorder for camera.
     ```
     python server.py
     ```
-    ![camera list in Python](screenshot/web-camera-video-recorder.PNG)
+
 
 ## Reference
 * https://github.com/log0/video_streaming_with_flask_example
 
-## Blog
-[How to Build Web Camera Recorder Using OpenCV and Flask][1]
-
-[0]:https://en.wikipedia.org/wiki/Microsoft_Windows_SDK
-[1]:http://www.codepool.biz/web-camera-recorder-oepncv-flask.html
-
 ## Dockerizing
-sudo docker build --tag flask-docker-demo-app .
-sudo docker run --name flask-docker-demo-app -p 5000:5000 flask-docker-demo-app
+```
+docker-compose up --build
+```
 
